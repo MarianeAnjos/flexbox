@@ -1,0 +1,56 @@
+
+/* seletor tag*/
+body{
+  background-color: #cae2e0;
+  color:#00043d;
+  text-align: center;
+}
+
+/* seletor classe*/
+.container{
+  background-color: #8cadc0;
+  height: 400px;
+  display: flex;
+
+  /* O justify content define o espaçamento no eixo principal*/
+  /* Flex-start | center | flex-end*/
+  /* space-between | space-around | space-evenly*/
+  justify-content: space-evenly;
+
+  /* o lign items define o posionamento dos itens no eixo transversal   */
+  /* flex-start | center | flex-end   
+     stretch | baseline
+  */
+  align-items: center;
+
+/*   wrap - faz o ajuste da posição dos elementos para manter a dimensão dos itens */
+  /*  nowrap | wrap */
+  flex-wrap: nowrap;
+
+  /*  o flex direction define a direção do eixo principal  */
+  /* row | column  / rowreverse  */
+  flex-direction: row;
+  
+}
+
+.item{
+  background-color: #98e2;
+  color: black;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  /* cresce proporcionalmente ao espaço livre   */
+  flex-grow: 0;
+
+  /* encolher   */
+  flex-shrink: 0
+}
+
+.item1{
+/*   flex-grow: 3 */
+  flex-shrink: 1
+}
+
+.item2{
+  flex-shrink: 5
+}
